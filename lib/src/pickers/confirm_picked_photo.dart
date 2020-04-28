@@ -22,7 +22,7 @@ class ConfirmPickedPhotoPage extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           PhotoView(
-            loadingChild: Ui.defaultLoading,
+            loadingBuilder: (context, progress)=> Ui.defaultLoading,
             backgroundDecoration: BoxDecoration(color: Colors.transparent),
             imageProvider: photo.hasLocalCache
                 ? FileImage(File(photo.localPath))

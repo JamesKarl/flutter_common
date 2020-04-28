@@ -379,33 +379,6 @@ class Ui {
   static const text14_yellow =
       const TextStyle(color: const Color(0xFFFA8C16), fontSize: 14);
 
-  ///小原点
-  static const fromDot = const SizedBox(
-    width: 16,
-    height: 16,
-    child: const CircleAvatar(
-      minRadius: 8,
-      backgroundColor: Color(0xff1890FF),
-      child: Text(
-        "起",
-        style: TextStyle(fontSize: 10, color: Colors.white),
-      ),
-    ),
-  );
-
-  static const toDot = const SizedBox(
-    width: 16,
-    height: 16,
-    child: const CircleAvatar(
-      minRadius: 8,
-      backgroundColor: Color(0xfffa8c16),
-      child: Text(
-        "终",
-        style: TextStyle(fontSize: 10, color: Colors.white),
-      ),
-    ),
-  );
-
   static const fromText = const Text('起:',
       style: const TextStyle(color: Color(0xff1890FF), fontSize: 15));
 
@@ -650,24 +623,6 @@ class Ui {
         '*',
         style: TextStyle(color: Colors.red),
       ),
-    );
-  }
-
-  static Widget startPoint() {
-    return Container(
-      height: 32,
-      width: 16,
-      alignment: Alignment.centerLeft,
-      child: fromDot,
-    );
-  }
-
-  static Widget endPoint() {
-    return Container(
-      height: 32,
-      width: 16,
-      alignment: Alignment.centerLeft,
-      child: toDot,
     );
   }
 

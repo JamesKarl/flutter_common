@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttercommon/src/widgets/dot_text_widget.dart';
 
 import '../global.dart';
 import '../ui.dart';
@@ -34,7 +35,7 @@ class FromToWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             SizedBox(height: 4.0),
-            Ui.fromDot,
+            DotTextWidget(),
             SizedBox(height: 2.0),
             Expanded(
               child: VerticalDivider(
@@ -44,7 +45,7 @@ class FromToWidget extends StatelessWidget {
               ),
             ),
             SizedBox(height: 2.0),
-            Ui.toDot,
+            DotTextWidget(text: "终", color: Color(0xfffa8c16)),
             SizedBox(height: 2.0),
             if (toSubText != null) SizedBox(height: 2)
           ],
